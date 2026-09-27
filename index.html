@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUZ | Fotografía</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111111;
+            color: white;
+        }
+
+        header {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            background:
+                linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+                url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=2000&q=80");
+            background-size: cover;
+            background-position: center;
+        }
+
+        header p {
+            color: #d0d0d0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 70px;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #dddddd;
+        }
+
+        nav {
+            background: #111111;
+            padding: 22px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            border: 1px solid #888;
+            padding: 12px 28px;
+            border-radius: 30px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #111;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 30px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .intro h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            max-width: 700px;
+            margin: auto;
+            color: #aaa;
+            line-height: 1.8;
+        }
+
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #1c1c1c;
+            padding: 35px 25px;
+            border: 1px solid #2d2d2d;
+            border-radius: 12px;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #888;
+        }
+
+        .card span {
+            font-size: 30px;
+        }
+
+        .card h3 {
+            margin: 20px 0 12px;
+        }
+
+        .card p {
+            color: #999;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #292929;
+            color: #777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            header h1 {
+                font-size: 45px;
+            }
+
+            .servicios {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <p>Fotografía profesional</p>
+
+        <h1>LUZ</h1>
+
+        <h2>Historias que merecen ser recordadas.</h2>
+
+    </header>
+
+    <nav>
+        <a href="galeria.html">Explorar galería →</a>
+    </nav>
+
+    <main>
+
+        <section class="intro">
+
+            <h2>Más que una fotografía</h2>
+
+            <p>
+                La fotografía nos permite conservar momentos, emociones
+                y experiencias que forman parte de nuestra historia.
+                Nuestro objetivo es crear imágenes naturales, auténticas
+                y atemporales.
+            </p>
+
+        </section>
+
+        <section class="servicios">
+
+            <div class="card">
+                <span>◉</span>
+                <h3>Retratos</h3>
+                <p>
+                    Sesiones enfocadas en capturar la personalidad
+                    y esencia de cada persona.
+                </p>
+            </div>
+
+            <div class="card">
+                <span>◇</span>
+                <h3>Eventos</h3>
+                <p>
+                    Documentamos momentos especiales de bodas,
+                    graduaciones y celebraciones.
+                </p>
+            </div>
+
+            <div class="card">
+                <span>○</span>
+                <h3>Familias</h3>
+                <p>
+                    Fotografías naturales para conservar recuerdos
+                    junto a las personas importantes.
+                </p>
+            </div>
+
+            <div class="card">
+                <span>✦</span>
+                <h3>Editorial</h3>
+                <p>
+                    Conceptos visuales y fotografías creativas
+                    para proyectos profesionales.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 LUZ Fotografía — Todos los derechos reservados.
+    </footer>
+
+</body>
+
+</html>
